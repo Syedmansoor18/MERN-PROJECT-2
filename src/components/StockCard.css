@@ -1,0 +1,75 @@
+/* src/components/StockCard.css */
+.stock-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 25px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  text-align: left;
+  margin: 20px auto;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.stock-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stock-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stock-symbol {
+  margin: 0;
+  font-size: 2.5em;
+  color: var(--text-primary);
+}
+
+.stock-name {
+  margin: 0;
+  font-size: 1.1em;
+  color: var(--text-secondary);
+}
+
+.stock-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stock-price {
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stock-change {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.stock-change.positive {
+  color: var(--positive-change);
+  background-color: rgba(39, 174, 96, 0.1);
+}
+
+.stock-change.negative {
+  color: var(--negative-change);
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.stock-footer p {
+  margin: 0;
+  font-size: 0.9em;
+  color: var(--text-secondary);
+  text-align: center;
+}

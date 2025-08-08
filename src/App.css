@@ -1,0 +1,74 @@
+/* src/App.css */
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+  h1 {
+  text-align: center;
+  color: red; /* Using the accent color for the heading */
+  font-size: 3em; /* Slightly adjusted for responsiveness */
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* Add some space below the heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 70%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.search-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #2980b9;
+}
+
+.search-button:disabled {
+  background-color: #a4b0be;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: var(--negative-change);
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.loading-message {
+  color: var(--text-secondary);
+  font-size: 18px;
+  margin-top: 30px;
+}
